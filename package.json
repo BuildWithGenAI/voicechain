@@ -1,0 +1,38 @@
+{
+  "name": "voicechain",
+  "version": "1.0.0",
+  "description": "Use it to power intelligent voice bots.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/deepgramVTT-deepgramTTV-example.ts",
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/twilio": "^3.19.2",
+    "@types/ws": "^8.5.13",
+    "nodemon": "^3.1.0",
+    "prettier": "3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3.9.0",
+    "@google-cloud/speech": "^6.7.0",
+    "assemblyai": "^4.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "microsoft-cognitiveservices-speech-sdk": "^1.41.0",
+    "twilio": "^5.4.0",
+    "ws": "^8.18.0"
+  }
+}
